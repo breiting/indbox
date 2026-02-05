@@ -164,7 +164,7 @@ No Sensor Data
 
 Future firmware releases will follow version naming:
 
-`indbox_v1.x`
+`indbox_vx.ino`
 
 To update:
 
