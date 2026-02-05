@@ -2,13 +2,13 @@
 
 _Interaction & Generative Design Interface_
 
-INDbox is an open-source physical computing interface designed for creative coding, generative design, and interactive media education.
+🎛️ INDbox is an open-source physical computing interface designed for creative coding, generative design, and interactive media education.
 
 It provides a standardized hardware input platform that allows students to explore sensor-based interaction systems without needing to build electronics from scratch.
 
 The box acts as a bridge between the physical and digital world: tangible input is captured by a microcontroller and transmitted via USB to creative coding environments such as [Processing](https://processing.org), [p5.js](https://p5js.org), [TouchDesigner](https://derivative.ca/UserGuide/TouchDesigner), [Unity](https://unity.com), or [OpenFrameworks](https://openframeworks.cc).
 
-## Concept
+## 🧠 Concept
 
 INDbox is **not a consumer product** but an educational interface and experimentation tool.
 
@@ -20,7 +20,7 @@ It enables students to:
 - Work within a shared hardware standard
 - Exchange code and ideas without hardware incompatibilities
 
-## Hardware Overview
+## 🔧 Hardware Overview
 
 Each INDbox contains:
 
@@ -35,7 +35,7 @@ All sensor data is streamed via USB Serial to a host computer.
 
 INDbox itself produces no visual output — all feedback happens in software.
 
-## Open Source Hardware
+## 📦 Open Source Hardware
 
 All hardware files are available in this repository:
 
@@ -46,30 +46,21 @@ All hardware files are available in this repository:
 
 You are free to modify, reproduce, and adapt the design.
 
-## Assembly
+## 🛠️ Assembly
 
-Step-by-step assembly guide:
+Step-by-step [assembly guide](/docs/hardware.md):
 
-docs/assembly.md
-
-Includes:
-
-- Wiring diagrams
-- PCB population
-- Sensor mounting
-- Enclosure assembly
-
-## Firmware Flashing
+## ⚡ Firmware Flashing
 
 The firmware is written in Arduino (ESP32 core).
 
 It reads all sensors and streams standardized as simple CSV data:
 
 ```
-btn1,btn2,pot,dist1
+btn1,btn2,pot,dist
 ```
 
-Firmware flashing instructions can be found in [flashing instructions](./docs/flashing.md)
+Firmware flashing instructions can be found in [flashing instructions](/docs/flashing.md)
 
 Includes:
 
@@ -78,24 +69,24 @@ Includes:
 - USB driver notes
 - Upload instructions
 
-## Purchase Assembled Unit
+## 🛒 Purchase Assembled Unit
 
 If you prefer not to build the hardware yourself, an assembled INDbox can be ordered here:
 
-[Order INDbox now](https://www.reitinger.eu/shop/indbox-8)
+👉 [Order INDbox](https://www.reitinger.eu/shop/indbox-8)
 
-## Example Projects
+## 🎓 Example Projects
 
-The INDbox is part of the educational program for `Generative Design 2` at [FH Joanneum](https://www.fh-joanneum.at) which will be held in the summer semester 2026.
+The INDbox is part of an educational program taught by the author at [FH Joanneum](https://www.fh-joanneum.at) and will be used during the summer semester 2026.
 
-After the course, students can share and publish their work in a separate repository.
+After the course, students are encouraged to share and publish their projects in a separate repository dedicated to INDbox-based work.
 
-## License
+## 📜 License
 
 Hardware and firmware are released under open-source licenses.
 
 See LICENSE file for details.
 
-## Version
+## 🧩 Version
 
 `INDbox v1`: Initial educational release.
