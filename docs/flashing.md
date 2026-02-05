@@ -14,7 +14,7 @@ Download the package from [here](https://www.arduino.cc/en/software) or use your
 
 After installation, launch the Arduino IDE once to complete the initial setup.
 
-![](./docs/arduino-welcome.png)
+![](/assets/arduino-welcome.png)
 
 ## Prepare ESP32 Board Support
 

@@ -1,3 +1,3 @@
 # Hardware Overview
 
-![](docs/esp32-overview.png)
+![](/assets/esp32-overview.png)

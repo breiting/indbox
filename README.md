@@ -69,7 +69,7 @@ It reads all sensors and streams standardized as simple CSV data:
 btn1,btn2,pot,dist1
 ```
 
-Firmware flashing instructions can be found in [firmware instructions](./docs/flashing.md)
+Firmware flashing instructions can be found in [flashing instructions](./docs/flashing.md)
 
 Includes:
 
