@@ -38,6 +38,14 @@ If other URLs already exist, separate them with commas.
 
 Click OK to save.
 
+**Important notice for Apple Silicon**:
+
+Make sure that you have Rosetta installed properly!
+
+```bash
+softwareupdate --install-rosetta --agree-to-license
+```
+
 ### Step 2 - Install ESP32 Boards
 
 Go to:
