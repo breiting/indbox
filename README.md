@@ -8,6 +8,8 @@ It provides a standardized hardware input platform that allows students to explo
 
 The box acts as a bridge between the physical and digital world: tangible input is captured by a microcontroller and transmitted via USB to creative coding environments such as [Processing](https://processing.org), [p5.js](https://p5js.org), [TouchDesigner](https://derivative.ca/UserGuide/TouchDesigner), [Unity](https://unity.com), or [OpenFrameworks](https://openframeworks.cc).
 
+![](/assets/indbox.png)
+
 ## 🧠 Concept
 
 INDbox is **not a consumer product** but an educational interface and experimentation tool.
