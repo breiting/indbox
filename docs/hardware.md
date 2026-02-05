@@ -92,25 +92,30 @@ Do not connect the potentiometer to 5V, as the ESP32 ADC is 3.3V max.
 
 ### HC-SR04 Level Shifting (ECHO)
 
-ECHO must be reduced to 3.3V logic level using a resistor divider:
+The HC-SR04 ECHO pin outputs a 5V logic signal. Since ESP32 GPIOs are 3.3V-only, the signal must be level-shifted using a resistor voltage divider.
 
-- HC-SR04 ECHO → **2 kΩ** → node to ESP32 ECHO GPIO
-- Node → **1 kΩ** → GND
+Wiring:
 
-This produces approximately 3.3V at the node when ECHO is 5V.
+- HC-SR04 ECHO → 1 kΩ → node → ESP32 ECHO GPIO
+- Node → 2 kΩ → GND
+
+This divider reduces the 5V signal to approximately 3.3V, which is safe for the ESP32 input.
+
+> Important:
+> Do not connect the ECHO pin directly to an ESP32 GPIO without level shifting.
 
 ## Firmware Data Format (Serial)
 
 The firmware streams a continuous CSV line (default ~30 Hz):
 
 ```csv
-btn1,btn2,pot,dist1,dist2
+btn1,btn2,pot,dist
 ```
 
 Where:
 
 - `btn1`, `btn2`: 0 or 1
 - `pot`: 0..4095
-- `dist1`, `dist2`: distance in millimeters (or -1 if no echo)
+- `dist`: distance in millimeters
 
 See `/docs/flashing.md` for setup and `/firmware` for implementation details.
