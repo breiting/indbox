@@ -1,14 +1,16 @@
-# INDbox v1 – Interaction & Generative Design Interface
+# INDbox
 
-INDbox v1 is an open-source physical computing interface designed for creative coding, generative design, and interactive media education.
+_Interaction & Generative Design Interface_
+
+INDbox is an open-source physical computing interface designed for creative coding, generative design, and interactive media education.
 
 It provides a standardized hardware input platform that allows students to explore sensor-based interaction systems without needing to build electronics from scratch.
 
-The box acts as a bridge between the physical and digital world: tangible input is captured by a microcontroller and transmitted via USB to creative coding environments such as Processing, p5.js, TouchDesigner, Unity, or OpenFrameworks.
+The box acts as a bridge between the physical and digital world: tangible input is captured by a microcontroller and transmitted via USB to creative coding environments such as [Processing](https://processing.org), [p5.js](https://p5js.org), [TouchDesigner](https://derivative.ca/UserGuide/TouchDesigner), [Unity](https://unity.com), or [OpenFrameworks](https://openframeworks.cc).
 
 ## Concept
 
-INDbox is not a consumer product but an educational interface and experimentation tool.
+INDbox is **not a consumer product** but an educational interface and experimentation tool.
 
 It enables students to:
 
@@ -44,25 +46,6 @@ All hardware files are available in this repository:
 
 You are free to modify, reproduce, and adapt the design.
 
-## Firmware / Flashing
-
-The firmware is written in Arduino (ESP32 core).
-
-It reads all sensors and streams standardized as simple CSV data:
-
-```
-btn1,btn2,pot,dist1
-```
-
-Firmware source and flashing instructions can be found in [firmware](./firmware/instructions.md)
-
-Includes:
-
-- Arduino IDE installation
-- ESP32 board setup
-- USB driver notes
-- Upload instructions
-
 ## Assembly
 
 Step-by-step assembly guide:
@@ -76,11 +59,30 @@ Includes:
 - Sensor mounting
 - Enclosure assembly
 
+## Firmware Flashing
+
+The firmware is written in Arduino (ESP32 core).
+
+It reads all sensors and streams standardized as simple CSV data:
+
+```
+btn1,btn2,pot,dist1
+```
+
+Firmware flashing instructions can be found in [firmware instructions](./firmware/instructions.md)
+
+Includes:
+
+- Arduino IDE installation
+- ESP32 board setup
+- USB driver notes
+- Upload instructions
+
 ## Purchase Assembled Unit
 
 If you prefer not to build the hardware yourself, an assembled INDbox can be ordered here:
 
-[Order INDbox v1](https://YOUR-ODOO-SHOP-LINK)
+[Order INDbox now](https://www.reitinger.eu/shop/indbox-8)
 
 ## Example Projects
 
