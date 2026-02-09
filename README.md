@@ -32,7 +32,7 @@ Each INDbox contains:
 - 2 × Push Buttons (discrete input)
 - 1 × Rotary Potentiometer (continuous input)
 - 1 × Ultrasonic Distance Sensors (spatial input)
-- Custom 3D-printed enclosure
+- [Custom 3D-printed](/hardware/) enclosure
 - Internal PCB / wiring harness
 
 All sensor data is streamed via USB Serial to a host computer.
@@ -46,7 +46,7 @@ All hardware files are available in this repository:
 - Schematics
 - PCB layouts
 - Bill of Materials (BOM)
-- 3D enclosure files (STL / STEP)
+- [3D enclosure files](/hardware/)
 
 You are free to modify, reproduce, and adapt the design.
 
