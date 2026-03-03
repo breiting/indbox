@@ -77,6 +77,10 @@ After the course, students are encouraged to share and publish their projects in
 
 Please take a look at the [INDbox Processing Library](https://github.com/breiting/indbox-processing).
 
+## Analyse Tool
+
+There is a small Python test script which allows for showing or capturing live data. Have a look at [python](/python).
+
 ## 📜 License
 
 Hardware and firmware are released under open-source licenses.
