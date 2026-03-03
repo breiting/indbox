@@ -41,13 +41,7 @@ INDbox itself produces no visual output — all feedback happens in software.
 
 ## 📦 Open Source Hardware
 
-All hardware files are available in this repository:
-
-- Schematics
-- PCB layouts
-- Bill of Materials (BOM)
-- [3D enclosure files](/hardware/)
-
+All hardware files are available in this repository are open source.
 You are free to modify, reproduce, and adapt the design.
 
 ## 🛠️ Assembly
@@ -73,17 +67,15 @@ Includes:
 - USB driver notes
 - Upload instructions
 
-## 🛒 Purchase Assembled Unit
-
-If you prefer not to build the hardware yourself, an assembled INDbox can be ordered here:
-
-👉 [Order INDbox](https://www.reitinger.eu/shop/indbox-8)
-
 ## 🎓 Example Projects
 
 The INDbox is part of an educational program taught by the author at [FH Joanneum](https://www.fh-joanneum.at) and will be used during the summer semester 2026.
 
 After the course, students are encouraged to share and publish their projects in a separate repository dedicated to INDbox-based work.
+
+## Processing 4 Integration
+
+Please take a look at the [INDbox Processing Library](https://github.com/breiting/indbox-processing).
 
 ## 📜 License
 
