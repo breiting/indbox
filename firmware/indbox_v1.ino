@@ -50,12 +50,12 @@ static const long  DIST_MAX_MM = 2000;
 
 static const float DIST_EMA_ALPHA = 0.25f;
 
-static const bool ENABLE_SLEW_LIMIT = true;
 static const long MAX_STEP_PER_SAMPLE_MM = 80;
 
 // ----------------------------
 // Distance runtime settings
 // ----------------------------
+static bool distanceEnableSlew = false;
 static bool  distanceEnabled = true;
 static float distanceHz = 10.0f;  // default distance measurement frequency
 static uint32_t distanceIntervalMs = 100; // derived from Hz
@@ -115,6 +115,7 @@ long clampStep(long current, long target, long maxStep) {
 // ----------------------------
 void printStatus() {
   Serial.print("# DIST=");
+  Serial.print(distanceEnableSlew ? "ON" : "OFF");
   Serial.print(distanceEnabled ? "ON" : "OFF");
   Serial.print(" DIST_HZ=");
   Serial.print(distanceHz, 2);
@@ -140,6 +141,14 @@ void handleSerialCommands() {
     else if (cmd.equalsIgnoreCase("DIST_OFF")) {
       distanceEnabled = false;
       Serial.println("# DIST_OFF");
+    }
+    else if (cmd.equalsIgnoreCase("DIST_SLEW_ON")) {
+      distanceEnableSlew = true;
+      Serial.println("# DIST_SLEW_ON");
+    }
+    else if (cmd.equalsIgnoreCase("DIST_SLEW_OFF")) {
+      distanceEnableSlew = false;
+      Serial.println("# DIST_SLEW_OFF");
     }
     else if (cmd.equalsIgnoreCase("STATUS")) {
       printStatus();
@@ -219,7 +228,7 @@ void loop() {
     if (hasValidDistance) {
       long targetMm = lastGoodMm;
 
-      if (ENABLE_SLEW_LIMIT) {
+      if (distanceEnableSlew) {
         long currentMm = (long)(distFiltered + 0.5f);
         targetMm = clampStep(currentMm, targetMm, MAX_STEP_PER_SAMPLE_MM);
       }
